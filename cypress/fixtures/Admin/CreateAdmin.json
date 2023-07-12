@@ -1,0 +1,11 @@
+{
+    "first_name": "Test",
+    "last_name": "Getnada",
+    "email" : "test1@getnada.com",
+    "password" : "Password12@@",
+    "password_confirmation" : "Password12@@",
+    "avatar" : "ffcf612d-65a7-40ab-b1b3-41c9fe69dcea",
+    "address" : "11 test street",
+    "phone_number" : "+234567890126",
+    "marketing" : 1
+}
