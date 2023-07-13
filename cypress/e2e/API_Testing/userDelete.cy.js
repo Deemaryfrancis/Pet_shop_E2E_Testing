@@ -13,25 +13,21 @@ describe('Create an Admin Account Test', ()=>{
             const token = response.body.data.token;
             cy.log(response.body.data.token)
 
-            cy.request({
-                failOnStatusCode: false,
-                method: "PUT",
-                url: adminBaseUrl + "/api/v1/admin/user-edit/"+'${uuid}',
-                form: true,
-                headers: {
-                    Authorization: "Bearer " + token
-                },
-                body: {
-                    first_name: "Darione"
-                }
+                cy.request({
+                    method: "DELETE",
+                    url: adminBaseUrl + "/api/v1/admin/user-delete/"+'${uuid}',
+                    form: true,
+                    headers: {
+                        Authorization: "Bearer " + token
+                    }
+                })
+                .then((response)=>{
+                    expect(response.status).to.equal(200)
+                    expect(response.body.success).to.equal(1)
+                })
             })
-            .then((response)=>{
-                expect(response.status).to.equal(200)
-                expect(response.body.success).to.equal(1)
-            })
-            })
-        })
             
-     })
+        })
         
+    })
 })
