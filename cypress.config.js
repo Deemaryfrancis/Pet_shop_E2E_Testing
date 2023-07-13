@@ -3,7 +3,7 @@ const { defineConfig } = require("cypress");
 module.exports = defineConfig({ 
   e2e: {
     env: {
-      apiBaseUrl: "https://api.example.com",
+      baseUrl: "https://pet-shop.buckhill.com.hr/",
       adminBaseUrl: "https://pet-shop.buckhill.com.hr"
     },
     setupNodeEvents(on, config) {

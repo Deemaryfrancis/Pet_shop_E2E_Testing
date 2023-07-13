@@ -1,0 +1,13 @@
+{
+    "Element": {
+      "Email": "#input-0",
+      "Password": "#input-2",
+      "LoginBtn": "button[type='button']",
+      "OTPField": "input[type='text']"
+    },
+    "TestData": {
+      "NonExistingEmail": "Pressuring23@yopmail.com",
+      "AdminEmailValue": "admin@buckhill.co.uk",
+      "PasswordValue": "admin"
+    }
+  }
