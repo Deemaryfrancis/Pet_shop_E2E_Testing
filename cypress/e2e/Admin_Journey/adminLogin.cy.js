@@ -1,4 +1,4 @@
-describe(" Developer Login", ()=>{
+describe("Admin Login", ()=>{
     const adminBaseUrl = Cypress.env('baseUrl')
     beforeEach("Visit Url", ()=>{
         cy.visit(adminBaseUrl)
